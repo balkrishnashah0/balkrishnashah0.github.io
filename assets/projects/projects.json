@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Humanoid Robot with Vision-Based Navigation",
+        "category": "robotics",
+        "description": "A miniature humanoid robot with 20 DoFs capable of navigating to an object, picking and placing it at the required location with fall recovery based on vision and a gyroscope sensor.",
+        "image": "assets/projects/projectImg/Humanoid.jpg",
+        "link": "https://github.com/example/humanoid-robot"
+    },
+    {
+        "title": "Virtual Hand Simulation using Hall Effect Sensors",
+        "category": "wearable",
+        "description": "A wireless physical wearable glove that allows users to interact in a virtual environment by manipulating the glove using Hall Effect sensors.",
+        "image": "assets/projects/projectImg/VRGlove.jpg",
+        "link": "https://github.com/example/virtual-hand"
+    },
+    {
+        "title": "Radio Controlled Automatic Agricultural Robot",
+        "category": "embedded",
+        "description": "A radio-controlled robot capable of planting seeds automatically and watering based on soil moisture levels using an in-house seed planting mechanism and a moisture sensor.",
+        "image": "assets/projects/projectImg/Agribot.jpg",
+        "link": "https://github.com/example/agricultural-robot"
+    }
+]

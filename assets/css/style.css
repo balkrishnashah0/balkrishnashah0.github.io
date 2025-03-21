@@ -437,7 +437,9 @@ section {
     margin-right: 1rem;
     color: var(--primary-color);
 }
-
+.contact-item a{
+    color: var(--light-text);
+}
 .contact-form {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -616,3 +618,14 @@ section {
 .scroll-up-btn:focus {
     outline: none;
 }
+/* Define the container's width for horizontal sliding */
+.project-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add opacity transition */
+    overflow: hidden;
+    width: 100%;
+}
+
+
+
+

@@ -5,7 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Bal Krishna Shah - Electronics Communication and Information Engineer</title>
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -60,7 +60,7 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/bal-krishna-shah" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/balkrishnashah0" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://x.com/SecretEngineer0" class="social-icon" target="_blank"><i class="fab fa-x"></i></a>                            
+                        <a href="https://x.com/SecretEngineer0" class="social-icon" target="_blank"><i class="fab fa-x-twitter"></i></a>                            
                         <a href="https://www.facebook.com/profile.php?id=100038244697553" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/balkrishnagopi/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -221,9 +221,10 @@
         <h2 class="section-title text-center mb-5">My Projects</h2> 
         <div class="project-filters text-center mb-4">
             <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
             <button class="filter-btn" data-filter="embedded">Embedded</button>
             <button class="filter-btn" data-filter="iot">IoT</button>
-            <button class="filter-btn" data-filter="signal">Signal Processing</button>
+            <button class="filter-btn" data-filter="wearable">Wearable</button>
         </div>
         <div class="row project-container">
             <!-- Projects will be loaded from JSON -->
@@ -246,15 +247,15 @@
                 <div class="contact-info">
                     <div class="contact-item mb-3">
                         <i class="fas fa-envelope"></i>
-                        <span>bal.077bei010@tcioe.edu.np</span>
+                        <a href="mailto:bal.077bei010@tcioe.edu.np">bal.077bei010@tcioe.edu.np</a>
                     </div>
                     <div class="contact-item mb-3">
                         <i class="fas fa-phone"></i>
-                        <span>+977 9803458411</span>
+                        <a href="tel:+977-9829281474">+977-9829281474</a>
                     </div>
                     <div class="contact-item mb-3">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Lalitpur, Nepal</span>
+                        <a href="https://www.google.com/maps/search/?q=Lalitpur,+Nepal" target="_blank">Lalitpur, Nepal</a>
                     </div>
                 </div>
             </div>
@@ -291,22 +292,27 @@
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/bal-krishna-shah" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/balkrishnashah0" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/SecretEngineer0" class="social-icon" target="_blank"><i class="fab fa-x"></i></a>                            
+                    <a href="https://x.com/SecretEngineer0" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>                            
                     <a href="https://www.facebook.com/profile.php?id=100038244697553" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/balkrishnagopi/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
                 <p class="copyright">© <span id="current-year"></span> Bal Krishna Shah. All Rights Reserved.</p>
+
+                <!-- <script>
+                    document.getElementById("current-year").textContent = new Date().getFullYear();
+                </script>                 -->
             </div>
         </div>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/projects.js"></script>
 <button id="scrollUp" class="scroll-up-btn">
     <i class="fas fa-chevron-up"></i>
 </button>
 
-<script>
+<!-- <script>
 window.onscroll = function () {
     var scrollUpButton = document.getElementById("scrollUp");
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -321,7 +327,7 @@ document.getElementById("scrollUp").addEventListener("click", function () {
         behavior: "smooth"
     });
 });
-</script>
+</script> -->
 
 </body>
 </html>
