@@ -21,6 +21,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+        // Contact Form Submission via Mailto
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let subject = document.getElementById("subject").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !subject || !message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+        // Construct Gmail compose URL
+        let gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=bal.077bei010@tcioe.edu.np&su=Contact Form Submission from ${encodeURIComponent(name)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+    
+        // Open in new tab
+        window.open(gmailURL, '_blank');
+    
+        // Optionally clear the form
+        document.getElementById("contact-form").reset();
+    });
+    
+
     // Smooth Scrolling for Navbar Links
     document.querySelectorAll(".nav-link, .btn[href^='#']").forEach(anchor => {
         anchor.addEventListener("click", function (event) {
